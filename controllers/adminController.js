@@ -5,12 +5,11 @@ const { get404, get500 } = require("./errorController");
 exports.getDashboard = async (req, res) => {
   try {
     const blogs = await blog.find({ user: req.user.id });
-    res.render("private/blogs", {
+    res.render("private/dashData", {
       pageTitle: "بخش مدیریت | داشبورد",
       path: "/dashboard",
       layout: "./layouts/dashLayout",
       fullname: req.user.fullname,
-      blogs,
       formatDate,
     });
   } catch (error) {
