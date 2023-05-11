@@ -1,14 +1,14 @@
 {
-    "name": "weblog-project",
+    "name": "Stellar-on-chain",
     "version": "1.0.0",
-    "description": "Simple weblog",
+    "description": "chain analysis",
     "main": "app.js",
     "scripts": {
         "start": "cross-env NODE_ENV=production node app",
         "test": "cross-env NODE_ENV=development DEBUG=weblog-project nodemon app"
     },
     "keywords": [],
-    "author": "Younes Ghorbany",
+    "author": "Javad Torabi",
     "license": "MIT",
     "dependencies": {
         "app-root-path": "^3.0.0",
